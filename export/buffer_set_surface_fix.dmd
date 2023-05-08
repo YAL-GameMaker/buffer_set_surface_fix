@@ -1,0 +1,30 @@
+```set template default.html```
+```set title buffer_set_surface_fix cheat sheet```
+```set autoapi ext```
+```set intro
+This is a "cheat sheet" for "buffer_set_surface_fix" extension by YellowAfterlife.
+The extension can be found on [itch.io](https://yellowafterlife.itch.io/gamemaker-buffer-set-surface-fix).
+```
+#[Intro]() {
+	
+}
+#[buffer_set_surface_detect()]() {
+	This function detects whether the original `buffer_set_surface` function
+	works correctly and sets `buffer_set_surface_uses_fallback` accordingly.
+	
+	It will be automatically ran when using `buffer_set_surface` for the first time,
+	but you can also run it yourself if you need to know whether the fallback
+	function is going to be used prior to calling `buffer_set_surface`.
+}
+#[buffer_set_surface_uses_fallback]() {
+	This global variable indicates whether the fallback function is being used.
+	
+	It is `true` if it is, `false` if it isn't,
+	and `undefined` if neither `buffer_set_surface` nor `buffer_set_surface_detect`
+	have been ran yet.
+}
+#[Notes](notes) {
+	_For some reason_ (CPU caching? DX9 trickery?),
+	the fallback function takes longer the first few times you call it -
+	even if it's a different buffer and a different surface each time.
+}
