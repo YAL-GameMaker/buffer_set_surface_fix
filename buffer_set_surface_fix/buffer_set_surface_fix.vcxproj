@@ -213,7 +213,6 @@
     <ClInclude Include="tiny_array.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="autogen.cpp" />
     <ClCompile Include="buffer_set_surface_fix.cpp" />
     <ClCompile Include="tiny_init_cleanup.cpp" />
     <ClCompile Include="tiny_malloc.cpp" />

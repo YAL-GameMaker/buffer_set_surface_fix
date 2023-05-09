@@ -41,9 +41,6 @@
     <ClCompile Include="buffer_set_surface_fix.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="autogen.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="tiny_trace.cpp">
       <Filter>Tiny</Filter>
     </ClCompile>
