@@ -35,6 +35,9 @@ The extension also provides one function and one variable.
   and `undefined` if neither `buffer_set_surface` nor `buffer_set_surface_detect`
   have been called yet.
 
+## An important reminder from FollowTheFun
+Just like with the regular `buffer_set_surface` function, your buffer must be at least `surface_get_width(surface) * surface_get_height(surface) * 4` bytes long, or the function will not copy anything in there.
+
 ## Building
 
 See [BUILD.md](BUILD.md)
